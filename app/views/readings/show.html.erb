@@ -1,0 +1,48 @@
+<p>
+  <b>Job:</b>
+  <%=h @reading.job_id %>
+</p>
+
+<p>
+  <b>Patch:</b>
+  <%=h @reading.patch_id %>
+</p>
+
+<p>
+  <b>Spectral 1:</b>
+  <%=h @reading.spectral_1 %>
+</p>
+
+<p>
+  <b>Spectral 2:</b>
+  <%=h @reading.spectral_2 %>
+</p>
+
+<p>
+  <b>Spectral 3:</b>
+  <%=h @reading.spectral_3 %>
+</p>
+
+<p>
+  <b>Spectral 4:</b>
+  <%=h @reading.spectral_4 %>
+</p>
+
+<p>
+  <b>Rgb r:</b>
+  <%=h @reading.rgb_r %>
+</p>
+
+<p>
+  <b>Rgb g:</b>
+  <%=h @reading.rgb_g %>
+</p>
+
+<p>
+  <b>Rgb b:</b>
+  <%=h @reading.rgb_b %>
+</p>
+
+
+<%= link_to 'Edit', edit_reading_path(@reading) %> |
+<%= link_to 'Back', readings_path %>

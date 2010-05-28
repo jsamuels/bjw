@@ -1,0 +1,34 @@
+<h1>Listing patches</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Spectral 1</th>
+    <th>Spectral 2</th>
+    <th>Spectral 3</th>
+    <th>Spectral 4</th>
+    <th>Rgb r</th>
+    <th>Rgb g</th>
+    <th>Rgb b</th>
+  </tr>
+
+<% @patches.each do |patch| %>
+  <tr>
+    <td><%=h patch.name %></td>
+    <td><%=h patch.spectral_1 %></td>
+    <td><%=h patch.spectral_2 %></td>
+    <td><%=h patch.spectral_3 %></td>
+    <td><%=h patch.spectral_4 %></td>
+    <td><%=h patch.rgb_r %></td>
+    <td><%=h patch.rgb_g %></td>
+    <td><%=h patch.rgb_b %></td>
+    <td><%= link_to 'Show', patch %></td>
+    <td><%= link_to 'Edit', edit_patch_path(patch) %></td>
+    <td><%= link_to 'Destroy', patch, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New patch', new_patch_path %>

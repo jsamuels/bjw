@@ -1,0 +1,44 @@
+<h1>Editing patch</h1>
+
+<% form_for(@patch) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :spectral_1 %><br />
+    <%= f.text_field :spectral_1 %>
+  </p>
+  <p>
+    <%= f.label :spectral_2 %><br />
+    <%= f.text_field :spectral_2 %>
+  </p>
+  <p>
+    <%= f.label :spectral_3 %><br />
+    <%= f.text_field :spectral_3 %>
+  </p>
+  <p>
+    <%= f.label :spectral_4 %><br />
+    <%= f.text_field :spectral_4 %>
+  </p>
+  <p>
+    <%= f.label :rgb_r %><br />
+    <%= f.text_field :rgb_r %>
+  </p>
+  <p>
+    <%= f.label :rgb_g %><br />
+    <%= f.text_field :rgb_g %>
+  </p>
+  <p>
+    <%= f.label :rgb_b %><br />
+    <%= f.text_field :rgb_b %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @patch %> |
+<%= link_to 'Back', patches_path %>

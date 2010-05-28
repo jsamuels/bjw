@@ -1,0 +1,23 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  job_id: 1
+  patch_id: 1
+  spectral_1: 1.5
+  spectral_2: 1.5
+  spectral_3: 1.5
+  spectral_4: 1.5
+  rgb_r: 1.5
+  rgb_g: 1.5
+  rgb_b: 1.5
+
+two:
+  job_id: 1
+  patch_id: 1
+  spectral_1: 1.5
+  spectral_2: 1.5
+  spectral_3: 1.5
+  spectral_4: 1.5
+  rgb_r: 1.5
+  rgb_g: 1.5
+  rgb_b: 1.5
