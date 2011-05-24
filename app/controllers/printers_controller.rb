@@ -2,7 +2,7 @@ class PrintersController < ApplicationController
   # GET /printers
   # GET /printers.xml
   def index
-    @printers = Printer.all
+    @printers = Printer.find(:all, :conditions => params_to_conditions(params), :order => "id")
 
     respond_to do |format|
       format.html # index.html.erb

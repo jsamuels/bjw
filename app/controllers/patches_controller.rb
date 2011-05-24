@@ -2,7 +2,7 @@ class PatchesController < ApplicationController
   # GET /patches
   # GET /patches.xml
   def index
-    @patches = Patch.all
+    @patches = Patch.find(:all, :conditions => params_to_conditions(params), :order => "id")
 
     respond_to do |format|
       format.html # index.html.erb

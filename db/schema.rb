@@ -9,9 +9,10 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100528164501) do
+ActiveRecord::Schema.define(:version => 20100608161518) do
 
   create_table "jobs", :force => true do |t|
+    t.integer  "printer_id"
     t.string   "name"
     t.string   "number"
     t.datetime "created_at"
@@ -129,5 +130,15 @@ ActiveRecord::Schema.define(:version => 20100528164501) do
 
   add_index "sessions", ["session_id"], :name => "index_sessions_on_session_id"
   add_index "sessions", ["updated_at"], :name => "index_sessions_on_updated_at"
+
+  create_table "tolerances", :force => true do |t|
+    t.string   "name"
+    t.float    "de"
+    t.float    "decmc"
+    t.float    "de94"
+    t.float    "de2000"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
 end

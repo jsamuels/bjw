@@ -4,6 +4,7 @@ class CreateJobs < ActiveRecord::Migration
       t.integer :printer_id
       t.string  :name
       t.string  :number
+      t.integer :active, :default => 1
 
       t.timestamps
     end

@@ -1,0 +1,30 @@
+<h1>Listing tolerances</h1>
+
+<table>
+  <tr>
+    <th>Id</th>
+    <th>Name</th>
+    <th>De</th>
+    <th>Decmc</th>
+    <th>De94</th>
+    <th>De2000</th>
+  </tr>
+
+<% @tolerances.each do |tolerances| %>
+  <tr>
+    <td><%=h tolerances.id %></td>
+    <td><%=h tolerances.name %></td>
+    <td><%=h tolerances.de %></td>
+    <td><%=h tolerances.decmc %></td>
+    <td><%=h tolerances.de94 %></td>
+    <td><%=h tolerances.de2000 %></td>
+    <td><%= link_to 'Show', tolerances %></td>
+    <td><%= link_to 'Edit', edit_tolerances_path(tolerances) %></td>
+    <td><%= link_to 'Destroy', tolerances, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New tolerances', new_tolerances_path %>

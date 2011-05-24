@@ -20,7 +20,7 @@ class JobsController < ApplicationController
   # GET /jobs
   # GET /jobs.xml
   def index
-    @jobs = Job.all
+    @jobs = Job.find(:all, :conditions => params_to_conditions(params), :order => "id")
 
     respond_to do |format|
       format.html # index.html.erb

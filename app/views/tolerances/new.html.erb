@@ -1,0 +1,35 @@
+<h1>New tolerances</h1>
+
+<% form_for(@tolerances) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :id %><br />
+    <%= f.text_field :id %>
+  </p>
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :de %><br />
+    <%= f.text_field :de %>
+  </p>
+  <p>
+    <%= f.label :decmc %><br />
+    <%= f.text_field :decmc %>
+  </p>
+  <p>
+    <%= f.label :de94 %><br />
+    <%= f.text_field :de94 %>
+  </p>
+  <p>
+    <%= f.label :de2000 %><br />
+    <%= f.text_field :de2000 %>
+  </p>
+  <p>
+    <%= f.submit 'Create' %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', tolerances_path %>

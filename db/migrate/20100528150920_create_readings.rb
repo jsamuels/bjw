@@ -2,7 +2,8 @@ class CreateReadings < ActiveRecord::Migration
   def self.up
     create_table :readings do |t|
       t.integer :job_id
-      t.integer :patch_id
+      t.integer :patch_id 
+      t.integer :tolerance_id
       t.float :spectral_1
       t.float :spectral_2
       t.float :spectral_3
@@ -43,7 +44,7 @@ class CreateReadings < ActiveRecord::Migration
       t.float :rgb_g
       t.float :rgb_b
       t.float :l
-      t.float :l
+      t.float :a
       t.float :b
       t.float :c
       t.float :h

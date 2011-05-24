@@ -2,7 +2,7 @@ class ReadingsController < ApplicationController
   # GET /readings
   # GET /readings.xml
   def index
-    @readings = Reading.all
+    @readings = Reading.find(:all, :conditions => params_to_conditions(params), :order => "id")
 
     respond_to do |format|
       format.html # index.html.erb
