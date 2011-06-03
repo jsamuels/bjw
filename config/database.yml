@@ -45,4 +45,4 @@ production:
   pool: 5
   username: bjws
   password: b123jws4
-  host: localhost
+  host: 174.143.210.109
