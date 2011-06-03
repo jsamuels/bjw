@@ -18,11 +18,11 @@ development:
   adapter: mysql
   encoding: utf8
   reconnect: false
-  database: bjw_development
+  database: bjw_production
   pool: 5
-  username: root
-  password:
-  socket: /tmp/mysql.sock
+  username: bjws
+  password: b123jws4
+  host: 174.143.210.109
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
